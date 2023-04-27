@@ -9,6 +9,8 @@ import AppleIcon from '@mui/icons-material/Apple';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import CloseIcon from '@mui/icons-material/Close';
 // import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+// import Snackbar from '@mui/material/Snackbar';
+// import Alert from '@mui/material/Alert';
 
 
 
@@ -37,7 +39,9 @@ export default function Registration() {
     if (phone.length !== 9) {
       setPh(true)
 
-    } 
+    } else{
+      setPh('')
+    }
   }
 
   function handleEmailChange(event) {
@@ -91,7 +95,7 @@ export default function Registration() {
       if (EM === "Email is Not Valid" || PW === "Password must be min one Capital letter,min one digit & min 6 letter" || Ph === "phone number must be 10 digit") {
         alert('you have enter wrong details')
       } else {
-        const confirmation = window.confirm('Registration successfully Done! Click OK to go to Login page.');
+      const confirmation = window.confirm(`Dear ${name} Registration successfully Done! Click OK to go to Login page.`);
         if (confirmation) {
           localStorage.setItem('userData', JSON.stringify(updatedUser))
           navigate('/login')
@@ -184,6 +188,13 @@ export default function Registration() {
                   </div> */}
               <div className={style.signup_btn}>
                 {registrationError && <p>{registrationError}</p>}
+
+                {/* <Snackbar autoHideDuration={6000} >
+                 <Alert  severity="success" sx={{ width: '100%' }}>
+                    This is a success message!
+                  </Alert>
+                 </Snackbar> */}
+
                 <Button sx={{
                   width: '100%',
                   borderRadius: '40px',

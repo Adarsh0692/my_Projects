@@ -51,13 +51,14 @@ export default function MyLogin() {
    }
 
    const validUser = userDetails.find((user) => user.password === password )
-   
+   const activeUser = userDetails.find((user) => user.active.isActive === false && user.password === password )
    function handleLoginClick(){
+    
     if(validUser){
       const confirmation = window.confirm( 'Login successfully! Click OK to go to Home page.');
       if(confirmation){
-
-         localStorage.setItem('login', true)
+         activeUser.active.isActive = true;
+         localStorage.setItem('userData', JSON.stringify(userDetails))
         navigate('/')
       }
     }
