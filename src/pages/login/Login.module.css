@@ -21,6 +21,11 @@
     /* text-align: center; */
     display: inline-flex;
 }
+.heading{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: inherit;
+}
 .logo {
     /* border:2px red solid; */
     text-align: center;
@@ -36,6 +41,7 @@
     margin: 0 8em;
     text-align: center;
     display: flex;
+  
     flex-direction: column;
     gap: 20px
 }
@@ -47,4 +53,66 @@
     flex-direction: column;
     gap: 30px;
 
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    /* .heading{
+        font-size: 15px;
+    } */
+.logo{
+    margin-left: 2rem;
+}
+    .form_box{
+        width: 55vw;
+        /* border: 1px red solid; */
+    }
+    .form{
+        /* border: 1px red solid; */
+        width: 60%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .main_div{
+        background-color: white;
+    }
+    .logo{
+        margin-top: -2rem;
+        margin-left: 12rem;
+        /* border: 1px red solid; */
+        /* width: 100%; */
+        display: none;
+    }
+    .cross{
+        margin-top: -15px;
+        margin-left: -3rem;
+        /* border: 1px red solid; */
+        /* width: 50%; */
+        display: none;
+    }
+    .form_box{
+        width: 80%;
+        margin-left: -1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form{
+        margin-left: 3rem;
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    .form{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    
 }

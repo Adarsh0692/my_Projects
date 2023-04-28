@@ -11,29 +11,29 @@
 }
 .div1{
     /* border: red 2px solid; */
-    width: 28%;
+    width: 25%;
     
     
 }
 .div2{
     /* border: red 2px solid; */
-    width: 44%;
-    border:.1px solid gray;
+    width: 45%;
+    border: 1px solid #eee;
     border-bottom: none;
 }
 .div3{
     /* border: red 2px solid; */
-    width: 28%;
+    width: 30%;
 }
 .home{
     /* border: red 2px solid; */
-    height: 3rem;
-    margin: 0 1rem;
+    height: 2rem;
+    margin:  1rem 0;
     /* z-index: 999;
     background: transparent; */
     font-family: inherit;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight:500;
 }
 .insideHome{
     /* border: red 2px solid; */
@@ -50,7 +50,8 @@
     width: 50%;
     text-align: center;
     padding: 10px 0;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: inherit;
    height: 2rem;
    
     cursor: pointer;
@@ -60,7 +61,7 @@
     width: 50%;
     text-align: center;
     padding: 10px 0;
-    font-weight: bold;
+    font-weight: 500;
     height: 2rem;
    cursor: pointer;
     /* border: red 2px solid; */
@@ -75,11 +76,18 @@
 .textHeader{
    display: flex;
    /* border: red 2px solid; */
-   height: 7rem;
+   height: 8rem;
    padding:  0 10px;
-   border: .1px solid gray;
+   border: 1px solid #eee;
    /* margin-top: 5rem; */
 
+}
+.commentText textarea{
+    resize: none;
+    border: none;
+    border-style: none;
+    font-weight: 300;
+    /* font-size: 10px; */
 }
 .profileSec{
     /* border: red 2px solid; */
@@ -97,8 +105,10 @@
     border: none;
 }
 .texticons{
-    /* border: red 2px solid; */
-    height: 7vh;
+    border: 1px solid #eee;
+    height: 11vh;
+    /* width: 38.5vw; */
+    margin-top: 1rem;
     display: flex;
 }
 .icons{
@@ -116,6 +126,7 @@
     /* overflow-y: scroll; */
     /* padding: 0 10px; */
 }
+
 .scroll{
     overflow-y: scroll;
     /* border: red 2px solid;  */

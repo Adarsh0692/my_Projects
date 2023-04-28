@@ -1,6 +1,6 @@
 import React from 'react'
 import Posts from './Posts'
-import data from './../../data/MOCK_DATA.json'
+import data from './../../data/userFake_DATA .json'
 
 
 export default function Profiles() {
@@ -17,13 +17,14 @@ export default function Profiles() {
                          index={index}
                          content={user.content} 
                          name={user.name}
-                         likeCount={user.linke}
-                         commentCount={user.coments}
+                         likeCount={user.likeCount}
+                         commentCount={user.comments}
                          time= {user.time}
                          email={user.email}
                          retweet={user.retweet}
                          share={user.share}
                          isLike={user.islike}
+                         views={user.views}
                          />
                     )
                 })

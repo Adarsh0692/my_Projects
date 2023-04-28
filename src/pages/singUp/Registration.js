@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+
+import {Link, useNavigate } from 'react-router-dom';
 import style from './Registration.module.css'
 // import Button from ?'@mui/material/Button';
 import { TextField, Button } from '@mui/material';
@@ -114,7 +114,7 @@ export default function Registration() {
 
       <div className={style.header}>
               <div className={style.cross}>
-                <p> <CloseIcon /> </p>
+                <p> <CloseIcon onClick={() => navigate(-1)} /> </p>
               </div>
               <div className={style.logo}>
 
