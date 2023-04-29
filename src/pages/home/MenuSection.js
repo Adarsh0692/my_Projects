@@ -120,10 +120,10 @@ export default function MenuSection() {
               </div>
               <div className={style.username}>
                 <div>
-                  <span className={style.name}>{userName.name} </span>
+                  <span className={style.name}>{userName? userName.name : ''} </span>
                 </div>
                 <div>
-                  <span className={style.email}>{userName.email}</span>
+                  <span className={style.email}>{userName? userName.email : ''}</span>
                 </div>
               </div>
               <div className={style.More}>
@@ -163,7 +163,7 @@ export default function MenuSection() {
               >
                 <span className={style.popoverName} onClick={handleLogout}>
                   {" "}
-                  Log out {userName.email}
+                  Log out {userName? userName.email : ''}
                 </span>
               </Typography>
             </Popover>
